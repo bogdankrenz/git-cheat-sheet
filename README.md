@@ -50,4 +50,15 @@ To list all your branches you can run (the active branch will be marked with a `
 $ git branch
 ```
 
+Possible workflow options:
+1. Add commints as usual in your branch. When ready `git revase --interactive master` to cleanup your commits
+2. To merge branch back to `master` use `git merge --ff BRANCH_NAME` (`--ff` means fast-forward / rebase)
+3. You can even squash the branch `git merge --squash`
+4. Use `git reset --soft` if you accidently added commits to `master`
+5. Make sure to merge/rebase `master` **before** merging your branch into `master`
+
+
+
+
+
 
